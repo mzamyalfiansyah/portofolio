@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+}
+
+.medsos{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+  padding: 5px;
+}
+
+.medsos img{
+  width: 18px;
+  margin-right: 5%;
+}
+
+.medsos a{
+  margin-right: 5%;
+}
+
+.profil{
+  display: flex;
+  margin: 5%;
+  margin-bottom: 2%;
+}
+
+.fotoProfil{
+    width: 20%;
+}
+
+.fotoProfil img{
+    border-radius: 50%;
+    width: 90%;
+}
+
+.profil .nama{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.tentangSaya{
+    display: flex;
+}
+
+.tentangSaya .kata-kata{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    margin-top: 0;
+    width: 50%;
+
+}
+
+.kata-kata p{
+    margin-left: 2%;
+}
+
+.tentangSaya img{
+    height: 250px;
+    width: 400px;
+    margin-left: 5%;
+}
+
+.selengkapnya{
+    color: rgb(45, 83, 160);
+    cursor: pointer;
+}
+
+.selengkapnya:hover{
+    color: rgb(20, 47, 101);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    .tab-container {
+      background: white;
+      margin: 5%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .tab-header {
+      display: flex;
+    }
+
+    .tab-header div {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .tab-header .active {
+      border-bottom: 2px solid black;
+      font-weight: bold;
+
+    }
+
+    .tab-content {
+      display: none;
+      padding: 10px;
+        text-align: center;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .grid{
+        justify-items: center;
+    }
+
+    .grid img {
+       margin-top: 5%;
+ 
+      width: 50%;
+      height: auto;
+      display: block;
+      box-shadow: 0px 0px 10px grey;
+    }
+
+
+
+@media (min-width: 300px) and (max-width: 750px){
+
+body{
+    margin: 0;
+}
+
+.medsos{
+  display: flex;
+  justify-content: end;
+  background-color: rgb(235, 235, 235);
+  padding: 2px;
+}
+
+.medsos img{
+  width: 12px;
+  margin-right: 5%;
+}
+
+.medsos a{
+  margin-right: 5%;
+}
+
+.profil{  
+  display: block;
+  text-align: center;
+}
+
+.fotoProfil{
+    width: 100%;
+}
+
+.fotoProfil img{
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 15%;
+
+}
+
+.profil .nama{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.nama p{
+  margin-bottom: 2%;
+}
+
+.nama2{
+  justify-content: center;
+  display: block;
+}
+
+.nama2 h2{
+  font-size: 14px;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+
+.nama2 img{
+  display: none;
+}
+
+.p1{
+  display: none;
+}
+
+.p2{
+  display: none;
+}
+
+
+.tentangSaya{
+    margin-top: 20%;
+}
+
+.tentangSaya .kata-kata{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    margin-top: 0;
+    width: 100%;
+
+}
+.kata-kata h3{
+  font-size: 14px;
+}
+
+.kata-kata p{
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.tentangSaya img{
+  display: none;
+}
+
+.selengkapnya{
+    color: rgb(45, 83, 160);
+    cursor: pointer;
+}
+
+.selengkapnya:hover{
+    color: rgb(20, 47, 101);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    .tab-container {
+      background: white;
+      margin: 5%;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .tab-header {
+      display: flex;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .tab-header div {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+      font-size: 14px;
+
+    }
+
+    .tab-header .active {
+      border-bottom: 2px solid black;
+      font-weight: bold;
+ 
+    }
+
+    .tab-content {
+      display: none;
+      padding: 10px;
+        text-align: center;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .grid{
+        justify-items: center;
+    }
+
+    .grid img {
+       margin-top: 5%;
+ 
+      width: 80%;
+      height: auto;
+      display: block;
+      box-shadow: 0px 0px 10px grey;
+    }
+
+}
