@@ -40,6 +40,7 @@ body{
 
 .tentangSaya{
     display: flex;
+    margin-bottom: 10%;
 }
 
 .tentangSaya .kata-kata{
@@ -129,6 +130,155 @@ body{
     }
 
 
+  
+
+
+    .skillbar {
+      background: #25b79f;
+      min-height: 700px;
+    }
+
+    .skillbar h2{
+      color: white; 
+      text-align: center; 
+      margin-top: 5%;
+    }
+    
+    .skillbar .skills {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    
+    .skillbar .skills-bar {
+      padding: 25px 30px;
+    }
+    
+    .skillbar .skills-bar .bar {
+      margin: 25px 0;
+    }
+    
+    .skillbar .skills-bar .bar .info span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    .skillbar .skills-bar .bar .info {
+      margin-bottom: 8px;
+      color: #07374a;
+    }
+    
+    .skillbar .skills-bar .bar .progress-line {
+      position: relative;
+      height: 10px;
+      width: 550px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+    
+    .skillbar .bar .progress-line span {
+      position: absolute;
+      background: #25b79f;
+      height: 100%;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      text-transfrom : uppercase;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+    
+    @keyframes animate {
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    
+    .skillbar .progress-line .html {
+      width: 80%;
+      
+    }
+    .skillbar .progress-line .css {
+      width: 80%;
+    }
+    .skillbar .progress-line .bootstrap {
+      width: 50%;
+    }
+    .skillbar .progress-line .word {
+      width: 85%;
+    }
+    .skillbar .progress-line .corel {
+      width: 90%;
+    }
+    
+    .skillbar .bar .progress-line span::before {
+      position: absolute;
+      content: "";
+      height: 0;
+      right: 0;
+      top: -14px;
+      width: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-style: #f0f0f0;
+      border-top-color: #07374a;
+    }
+    
+    .skillbar .bar .progress-line span::after {
+      position: absolute;
+      right: 0;
+      top: -28px;
+      color: #f0f0f0;
+      font-size: 12px;
+      font-weight: 700;
+      background: #07374a;
+      padding: 1px 8px;
+      border-radius: 3px;
+    }
+    
+    
+    .skillbar .progress-line .html::after {
+      content: "80%";
+    }
+    .skillbar .progress-line .css::after {
+      content: "80%";
+    }
+    .skillbar .progress-line .bootstrap::after {
+      content: "60%";
+    }
+    .skillbar .progress-line .word::after {
+      content: "85%";
+    }
+    .skillbar .progress-line .corel::after {
+      content: "90%";
+    }
+    
+    /* ////........Media Query........//// */
+    
+    @media (max-width: 700px) {
+        .skillbar .skills{
+            width: 80%;
+        }
+    
+        .skillbar .skills-bar .bar .progress-line{
+            width: 100%;
+        }
+    }      
+
+
+
+
+
+
+
+
 
 @media (min-width: 300px) and (max-width: 750px){
 
@@ -163,7 +313,7 @@ body{
 
 .fotoProfil img{
     border-radius: 50%;
-    width: 30%;
+    width: 45%;
     margin-top: 15%;
 
 }
@@ -292,10 +442,79 @@ body{
     .grid img {
        margin-top: 5%;
  
-      width: 80%;
+      width: 90%;
       height: auto;
       display: block;
       box-shadow: 0px 0px 10px grey;
     }
+
+
+
+
+
+
+    .skillbar {
+      background: none;
+      min-height: 700px;
+    }
+
+    .skillbar h2{
+      color: black;
+      font-size: 16px;
+      margin-top: 30%;
+    }
+
+    .skillbar .skills-bar .bar .info span {
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+
+    .skillbar .skills-bar .bar .progress-line {
+      position: relative;
+      height: 5px;
+      
+      background: #f0f0f0;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+
+    .skillbar .bar .progress-line span::before {
+      position: absolute;
+      content: "";
+      height: 0;
+      right: 0;
+      top: -143x;
+      width: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-style: #f0f0f0;
+      border-top-color: #07374a;
+    }
+    
+    .skillbar .bar .progress-line span::after {
+      position: absolute;
+      right: 0;
+      top: -28px;
+      color: #f0f0f0;
+      font-size: 8px;
+      font-weight: 700;
+      background: #07374a;
+      padding: 1px 8px;
+      border-radius: 3px;
+    }
+
+    .skillbar .skills {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 15x;
+      box-shadow: 0 0 7px 3px rgba(128, 128, 128, 0.3);
+    }
+
 
 }
