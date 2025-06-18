@@ -82,9 +82,9 @@ body{
 
 
     .tab-container {
-      background: white;
+
       margin: 5%;
-      border-radius: 10px;
+      
       overflow: hidden;
     }
 
@@ -272,6 +272,9 @@ body{
         }
     }      
 
+.kosong{
+  display: none;
+}
 
 
 
@@ -284,6 +287,18 @@ body{
 
 body{
     margin: 0;
+}
+
+.bg1{
+  background-image: url("bg/Profil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.kosong{
+  display: block;
 }
 
 .medsos{
@@ -314,7 +329,7 @@ body{
 .fotoProfil img{
     border-radius: 50%;
     width: 45%;
-    margin-top: 15%;
+ 
 
 }
 
@@ -326,7 +341,7 @@ body{
 }
 
 .nama p{
-  margin-bottom: 2%;
+display: none;
 }
 
 .nama2{
@@ -335,9 +350,7 @@ body{
 }
 
 .nama2 h2{
-  font-size: 14px;
-  margin-top: 4%;
-  margin-bottom: 0;
+display: none;
 }
 
 .nama2 img{
@@ -354,7 +367,7 @@ body{
 
 
 .tentangSaya{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .tentangSaya .kata-kata{
@@ -362,15 +375,18 @@ body{
     margin: 5%;
     margin-top: 0;
     width: 100%;
-
+    color: yellow;
+    margin-bottom: 38%;
 }
 .kata-kata h3{
-  font-size: 14px;
+  display: none;
 }
 
 .kata-kata p{
     margin-left: 2%;
-    font-size: 12px;
+    font-size: 20px;
+    margin-top: 14%;
+    text-align: center;
 }
 
 .tentangSaya img{
@@ -378,8 +394,7 @@ body{
 }
 
 .selengkapnya{
-    color: rgb(45, 83, 160);
-    cursor: pointer;
+display: none;
 }
 
 .selengkapnya:hover{
@@ -398,11 +413,10 @@ body{
 
 
     .tab-container {
-      background: white;
-      margin: 5%;
-      border-radius: 50px;
-      overflow: hidden;
-    }
+      background-color: none;
+      color: white;
+      margin-top: 5%;
+    } 
 
     .tab-header {
       display: flex;
@@ -420,7 +434,7 @@ body{
     }
 
     .tab-header .active {
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid rgb(255, 255, 255);
       font-weight: bold;
  
     }
@@ -428,15 +442,18 @@ body{
     .tab-content {
       display: none;
       padding: 10px;
-        text-align: center;
+      text-align: center;
     }
 
     .tab-content.active {
       display: block;
+      
     }
+
 
     .grid{
         justify-items: center;
+
     }
 
     .grid img {
@@ -454,66 +471,17 @@ body{
 
 
     .skillbar {
-      background: none;
-      min-height: 700px;
+      display: none;
     }
 
-    .skillbar h2{
-      color: black;
-      font-size: 16px;
-      margin-top: 30%;
-    }
 
-    .skillbar .skills-bar .bar .info span {
-      font-size: 0.7rem;
-      font-weight: 500;
-    }
-
-    .skillbar .skills-bar .bar .progress-line {
-      position: relative;
-      height: 5px;
-      
-      background: #f0f0f0;
-      border-radius: 10px;
-      transform: scaleX(0);
-      transform-origin: left;
-      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    }
-
-    .skillbar .bar .progress-line span::before {
-      position: absolute;
-      content: "";
-      height: 0;
-      right: 0;
-      top: -143x;
-      width: 0;
-      border: 7px solid transparent;
-      border-bottom-width: 0px;
-      border-right-width: 0px;
-      border-top-style: #f0f0f0;
-      border-top-color: #07374a;
-    }
-    
-    .skillbar .bar .progress-line span::after {
-      position: absolute;
-      right: 0;
-      top: -28px;
-      color: #f0f0f0;
-      font-size: 8px;
-      font-weight: 700;
-      background: #07374a;
-      padding: 1px 8px;
-      border-radius: 3px;
-    }
-
-    .skillbar .skills {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #fff;
-      border-radius: 15x;
-      box-shadow: 0 0 7px 3px rgba(128, 128, 128, 0.3);
+    .bgporto{
+      margin-top: 0 ;
+      background-image: url("bg/Portofoliobg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
     }
 
 
