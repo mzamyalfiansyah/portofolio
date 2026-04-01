@@ -1,528 +1,162 @@
-body{
+/* Reset Dasar */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
-.medsos{
-  display: flex;
-  justify-content: center;
-  background-color: rgb(235, 235, 235);
-  padding: 5px;
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.medsos img{
-  width: 18px;
-  margin-right: 5%;
+/* Navigasi */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.medsos a{
-  margin-right: 5%;
-}
-
-.profil{
-  display: flex;
-  margin: 5%;
-  margin-bottom: 2%;
-}
-
-.fotoProfil{
-    width: 20%;
-}
-
-.fotoProfil img{
-    border-radius: 50%;
-    width: 90%;
-}
-
-.profil .nama{
-    font-family: Arial, Helvetica, sans-serif;
-   
-}
-
-.tentangSaya{
+.navbar {
     display: flex;
-    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.tentangSaya .kata-kata{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5%;
-    margin-top: 0;
-    width: 50%;
-
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.kata-kata p{
-    margin-left: 2%;
+.logo span { color: #3498db; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
 }
 
-.tentangSaya img{
-    height: 250px;
-    width: 400px;
-    margin-left: 5%;
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    transition: 0.3s;
 }
 
-.selengkapnya{
-    color: rgb(45, 83, 160);
-    cursor: pointer;
+.nav-links li a:hover { color: #3498db; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-.selengkapnya:hover{
-    color: rgb(20, 47, 101);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-    .tab-container {
-
-      margin: 5%;
-      
-      overflow: hidden;
-    }
-
-    .tab-header {
-      display: flex;
-    }
-
-    .tab-header div {
-      flex: 1;
-      text-align: center;
-      padding: 10px 0;
-      cursor: pointer;
-      font-size: 20px;
-    }
-
-    .tab-header .active {
-      border-bottom: 2px solid black;
-      font-weight: bold;
-
-    }
-
-    .tab-content {
-      display: none;
-      padding: 10px;
-        text-align: center;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    .grid{
-        justify-items: center;
-    }
-
-    .grid img {
-       margin-top: 5%;
- 
-      width: 50%;
-      height: auto;
-      display: block;
-      box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    }
-
-
-  
-
-
-    .skillbar {
-      background: #25b79f;
-      min-height: 700px;
-    }
-
-    .skillbar h2{
-      color: white; 
-      text-align: center; 
-      margin-top: 5%;
-    }
-    
-    .skillbar .skills {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-    }
-    
-    .skillbar .skills-bar {
-      padding: 25px 30px;
-    }
-    
-    .skillbar .skills-bar .bar {
-      margin: 25px 0;
-    }
-    
-    .skillbar .skills-bar .bar .info span {
-      font-size: 1rem;
-      font-weight: 500;
-    }
-    
-    .skillbar .skills-bar .bar .info {
-      margin-bottom: 8px;
-      color: #07374a;
-    }
-    
-    .skillbar .skills-bar .bar .progress-line {
-      position: relative;
-      height: 10px;
-      width: 550px;
-      background: #f0f0f0;
-      border-radius: 10px;
-      transform: scaleX(0);
-      transform-origin: left;
-      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    }
-    
-    .skillbar .bar .progress-line span {
-      position: absolute;
-      background: #25b79f;
-      height: 100%;
-      border-radius: 10px;
-      transform: scaleX(0);
-      transform-origin: left;
-      text-transfrom : uppercase;
-      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    }
-    
-    @keyframes animate {
-      100% {
-        transform: scaleX(1);
-      }
-    }
-    
-    .skillbar .progress-line .html {
-      width: 80%;
-      
-    }
-    .skillbar .progress-line .css {
-      width: 80%;
-    }
-    .skillbar .progress-line .bootstrap {
-      width: 50%;
-    }
-    .skillbar .progress-line .word {
-      width: 85%;
-    }
-    .skillbar .progress-line .corel {
-      width: 90%;
-    }
-    
-    .skillbar .bar .progress-line span::before {
-      position: absolute;
-      content: "";
-      height: 0;
-      right: 0;
-      top: -14px;
-      width: 0;
-      border: 7px solid transparent;
-      border-bottom-width: 0px;
-      border-right-width: 0px;
-      border-top-style: #f0f0f0;
-      border-top-color: #07374a;
-    }
-    
-    .skillbar .bar .progress-line span::after {
-      position: absolute;
-      right: 0;
-      top: -28px;
-      color: #f0f0f0;
-      font-size: 12px;
-      font-weight: 700;
-      background: #07374a;
-      padding: 1px 8px;
-      border-radius: 3px;
-    }
-    
-    
-    .skillbar .progress-line .html::after {
-      content: "80%";
-    }
-    .skillbar .progress-line .css::after {
-      content: "80%";
-    }
-    .skillbar .progress-line .bootstrap::after {
-      content: "60%";
-    }
-    .skillbar .progress-line .word::after {
-      content: "85%";
-    }
-    .skillbar .progress-line .corel::after {
-      content: "90%";
-    }
-    
-    /* ////........Media Query........//// */
-    
-    @media (max-width: 700px) {
-        .skillbar .skills{
-            width: 80%;
-        }
-    
-        .skillbar .skills-bar .bar .progress-line{
-            width: 100%;
-        }
-    }      
-
-.kosong{
-  display: none;
-}
-
-
-
-
-
-
-
-
-@media (min-width: 400px) and (max-width: 750px){
-
-body{
-    margin: 0;
-    background-color: #1b0b14;
-}
-
-.bg1{
-  background-image: url("bg/Profil.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-}
-
-.kosong{
-  display: block;
-}
-
-.medsos{
-  display: flex;
-  justify-content: end;
-  background-color: rgb(235, 235, 235);
-  padding: 2px;
-}
-
-.medsos img{
-  width: 12px;
-  margin-right: 5%;
-}
-
-.medsos a{
-  margin-right: 5%;
-}
-
-.profil{  
-  display: block;
-  text-align: center;
-}
-
-.fotoProfil{
-    width: 100%;
-}
-
-.fotoProfil img{
+.hero-content img{
+    width: 30%;
     border-radius: 50%;
-    width: 45%;
- 
-
+    border: solid 8px white;    
 }
 
-.profil .nama{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero h1 span { color: #3498db; }
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #2980b9; }
+
+/* Section Common */
+section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-
+    transition: transform 0.3s;
 }
 
-.nama p{
-display: none;
-}
+.card:hover { transform: translateY(-10px); }
+.card img { width: 100%; border-radius: 5px; }
 
-.nama2{
-  justify-content: center;
-  display: block;
+/* Contact Form */
+.hubungi{
+    text-align: center;
 }
-
-.nama2 h2{
-display: none;
-}
-
-.nama2 img{
-  display: none;
-}
-
-.p1{
-  display: none;
-}
-
-.p2{
-  display: none;
-}
-
-
-.tentangSaya{
-    margin-top: 15%;
-}
-
-.tentangSaya .kata-kata{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5%;
-    margin-top: 0;
-    width: 100%;
-    color: yellow;
-    margin-bottom: 38%;
-}
-.kata-kata h3{
-  display: none;
-}
-
-.kata-kata p{
-    margin-left: 2%;
-    font-size: 20px;
-    margin-top: 14%;
+.contact {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-.tentangSaya img{
-  display: none;
-}
-
-.selengkapnya{
-display: none;
-}
-
-.selengkapnya:hover{
-    color: rgb(20, 47, 101);
+.contact img{
+    width: 20px;
+    flex-direction: row;
+    margin: 20px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-    .tab-container {
-      background-color: none;
-      color: white;
-      margin-top: 5%;
-    } 
-
-    .tab-header {
-      display: flex;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-
-    .tab-header div {
-      flex: 1;
-      text-align: center;
-      padding: 10px 0;
-      cursor: pointer;
-      font-size: 14px;
-
-    }
-
-    .tab-header .active {
-      border-bottom: 2px solid rgb(255, 255, 255);
-      font-weight: bold;
- 
-    }
-
-    .tab-content {
-      display: none;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .tab-content.active {
-      display: block;
-      
-    }
-
-
-    .grid{
-        justify-items: center;
-
-    }
-
-    .grid img {
-       margin-top: 5%;
- 
-      width: 90%;
-      height: auto;
-      display: block;
-      box-shadow: 0px 0px 10px grey;
-    }
-
-
-
-
-
-
-    .skillbar {
-      display: none;
-    }
-
-.bg1, .bgporto {
-  background-size: 100% auto; /* atau 'cover' tergantung preferensi */
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-    .bgporto{
-      margin-top: 0 ;
-      background-image: url("bg/Portofoliobg.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      justify-content: center;
-      align-items: center;
-    }
-
-
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-
-@media (max-width: 400px){
-
-  body{
-    background-color: #1b0b14;
-  }
-
-  .kosong{
-    display: none;
-  }
-
-  .fotoProfil img{
-    margin-top: 45%;
-  }
-
-  .tentangSaya p{
-    font-size: 12px;
-  }
-
-      .grid img {
-       margin-top: 5%;
- 
-      box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    }
+.skill ul{
+    list-style: none;
+    
 }
 
+.skill img{
+    width: 30px;
+}
 
+/* Responsif (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Disembunyikan untuk menu mobile */
+    }
+    
+    .hero h1 { font-size: 2.5rem; }
+}
 
-
-
-
-
-
-
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
